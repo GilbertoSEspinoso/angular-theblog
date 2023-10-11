@@ -1,16 +1,18 @@
 <div class="container__big-card">
-  <div class="big-card__photo">
-    <img src="{{ photoCover }}" alt="image placeholder" />
-  </div>
-  <div class="big-card__title">
-    <span>Outubro, 04,2023</span>
-    <h1>
-      <a href="#">{{ cardTitle }}</a>
-    </h1>
-  </div>
-  <div class="big-card__description">
-    <p>
-      {{ cardDescription }}
-    </p>
-  </div>
+  <a [routerLink]="['/content']">
+    <div class="big-card__photo">
+      <img src="{{ photoCover }}" alt="image placeholder" />
+    </div>
+    <div class="big-card__title">
+      <span>Outubro, 04,2023</span>
+      <h1>
+        {{ cardTitle }}
+      </h1>
+    </div>
+    <div class="big-card__description">
+      <p>
+        {{ cardDescription }}
+      </p>
+    </div>
+  </a>
 </div>
